@@ -1,23 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
+<div class="jumbotron bg-light border border-secondary">
+    <div class="row">
+        <div class="card-deck">
+            <div class="card border border-primary">
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+                    <h5 class="card-title">Cadastro de produtos</h5>
+                    <p class="card=text">
+                        Aqui você pode cadastrar todos os seus produtos.
+                    </p>
+                    <a href="/produtos" class="btn btn-primary">Cadastre seus produtos</a>
                 </div>
             </div>
+            <div class="card border border-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Cadastro de Usuários</h5>
+                    <p class="card=text">
+                        Aqui você pode registrar seus usuários. 
+                    </p>
+                    <a href="/categorias" class="btn btn-primary">Registre seus usuarios</a>
+                </div>
+            </div>            
         </div>
     </div>
 </div>
+
 @endsection

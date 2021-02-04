@@ -28,25 +28,25 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Nome:</strong>
+                    <strong>Nome do produto</strong>
                     <input type="text" name="nome" class="form-control" placeholder="Nome">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Descrição:</strong>
+                    <strong>Descrição do produto</strong>
                     <textarea class="form-control" style="height:50px" name="descricao"
                         placeholder="Descrição"></textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Quantidade:</strong>
+                    <strong>Quantidade do produto</strong>
                     <input type="number" name="quantidade" class="form-control" placeholder="Quantidade">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Criar Produto</button>
+                <button type="submit" class="btn btn-primary" style="background-color: green">Criar Produto</button>
             </div>
         </div>
     </form>
