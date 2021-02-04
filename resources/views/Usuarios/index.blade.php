@@ -4,12 +4,12 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Produtos </h2>
+                <h2>Usuarios</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('home') }}" title="Voltar"> <i
                     class="fas fa-backward "></i> </a>
-                <a class="btn btn-success" href="{{ route('produtos.create') }}" title="Criar produto"> <i class="fas fa-plus-circle"></i>
+                <a class="btn btn-success" href="{{ route('usuarios.create') }}" title="Criar usuario"> <i class="fas fa-plus-circle"></i>
                     </a>
             </div>
         </div>
@@ -25,24 +25,28 @@
         <tr>
             <th>ID</th>
             <th>Nome</th>
-            <th>Descrição</th>
-            <th>Quantidade</th>
+            <th>Apelido</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+            <th>CPF</th>
             <th>Data de criação</th>
             <th width="280px">Ações</th>
         </tr>
-        @foreach ($produtos as $produtos)
+        @foreach ($usuarios as $usuarios)
             <tr>
-                <td>{{ $produtos->id }}</td>
-                <td>{{ $produtos->nome }}</td>
-                <td>{{ $produtos->descricao }}</td>
-                <td>{{ $produtos->quantidade }}</td>               
-                <td>{{ date_format($produtos->created_at, 'd/m/Y') }}</td>
+                <td>{{ $usuarios->id }}</td>
+                <td>{{ $usuarios->nome }}</td>
+                <td>{{ $usuarios->apelido }}</td>
+                <td>{{ $usuarios->idade }}</td>     
+                <td>{{ $usuarios->telefone }}</td>               
+                <td>{{ $usuarios->cpf }}</td>   
+                <td>{{ date_format($usuarios->created_at, 'd/m/Y') }}</td>
                 <td>
-                    <form action="{{ route('produtos.destroy', $produtos) }}" method="POST">
+                    <form action="{{ route('usuarios.destroy', $usuarios) }}" method="POST">
 
-                        <a href="{{ route('produtos.show', $produtos) }}" title="show"><i class="fas fa-eye text-success  fa-lg"></i></a>
+                        <a href="{{ route('usuarios.show', $usuarios) }}" title="show"><i class="fas fa-eye text-success  fa-lg"></i></a>
 
-                        <a href="{{ route('produtos.edit', $produtos) }}"><i class="fas fa-edit  fa-lg"></i></a>
+                        <a href="{{ route('usuarios.edit', $usuarios) }}"><i class="fas fa-edit  fa-lg"></i></a>
 
                         @csrf
                         @method('DELETE')

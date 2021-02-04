@@ -46,7 +46,6 @@ class ProdutoController extends Controller
         $prod->descricao = $request->input('descricao');
         $prod->quantidade = $request->input('quantidade');
         $prod->user_id = auth()->id();
-        $prod->id_atual=auth()->id();
 
         $prod->save();
 

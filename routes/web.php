@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,8 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/dd', [App\Http\Controllers\HomeController::class, 'produtosusuarios'])->name('dd');
+
 Route::resource('produtos', App\Http\Controllers\ProdutoController::class);
+
+Route::resource('usuarios', App\Http\Controllers\UsuarioController::class);
