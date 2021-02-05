@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="col-md-2"></div>
+<div class="col-md-8 fbranco">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -50,4 +52,5 @@
             </div>
         </div>
     </form>
+</div>
 @endsection

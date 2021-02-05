@@ -14,7 +14,7 @@
     </div>
     @foreach ($usuarios as $usuarios)
             <h3>{{ $usuarios->apelido }}</h3>
-        <table class="table table-bordered table-striped table-responsive-lg">
+        <table class="table table-bordered table-striped table-responsive-lg fverde">
             <tr>
                 <th>ID</th>
                 <th>Nome</th>

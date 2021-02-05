@@ -1,13 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="col-md-2"></div>
+<div class="col-md-8 fbranco">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
                 <h2>Editar Usuario</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('usuarios.index') }}" title="Voltar"> Voltar</a>
+                <a class="btn btn-primary" href="{{ route('usuarios.index') }}" title="Voltar"><i
+                    class="fas fa-backward "></i></a>
             </div>
         </div>
     </div>
@@ -63,4 +66,5 @@
             </div>
         </div>
     </form>
+</div>
 @endsection

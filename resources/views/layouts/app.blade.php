@@ -29,25 +29,25 @@
     
 </head>
 <body>        
-        <nav>
+        <nav class="navbar navbar-fixed-top navbar-default fazul">
             <div class="container col-md-2">
-                <a class="navbar-brand" href="{{ url('/') }}">TTDC</a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="{!! asset('images/logo.png') !!}" style="width:50px; height:50px;  "  ></a>
             </div>    
             <div class="container col-md-8">
             </div>
             <div class="container col-md-2">
                 @guest
                     @if (Route::has('login'))
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a style="color:#fffff0" class="nav-link" href="{{ route('login') }}">{{ __('Entrar') }}</a>
                     @endif
-                            
+                    |        
                     @if (Route::has('register'))
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        <a style="color:#fffff0" class="nav-link" href="{{ route('register') }}">{{ __('Criar conta') }}</a>
                     @endif
                     @else
-                        <span>{{ Auth::user()->name }}</span>
-                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
+                        <span>Bem vindo, {{ Auth::user()->name }}!</span>
+                        <a style="color:#fffff0" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            {{ __('Desconectar') }}
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
@@ -55,12 +55,11 @@
                 @endguest
             </div>
         </nav>
-        <br />
-        <br />
 
         <main class="py-4">
             @yield('content')
         </main>
+
     </div>
 </body>
 <style>
@@ -74,18 +73,35 @@
     text-align: center;
     }
     body {
-        background-color:  #fffff0;
-        padding: 15px;
+        background-color:  #f0f0f0;
+        padding: 110px;
     }
     table{
         background-color: lightgray;
     }
     table th{
-        background-color: black;
+        background-color: #2e2d2c;
         color:#fff;
     }
-    .navbar {
-        margin-bottom: 20px;
+    .dir{
+        display: inline;
+        float: right;
+    }
+    .fbranco{
+        background-color: white;
+    }
+    .fazul{
+        background-color: #22b9b9;
+        color: white;
+    }
+    .fverde{
+        background-color: #67f04c5d;
+    }
+    .flaranja{
+        background-color: #ed7e2ee0;
+    }
+    .famarelo{
+        background-color: #f2f545d3;
     }
 </style>
 </html>

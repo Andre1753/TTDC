@@ -21,7 +21,7 @@
         </div>
     @endif
 
-    <table class="table table-bordered table-striped table-responsive-lg">
+    <table class="table table-bordered table-striped table-responsive-lg famarelo">
         <tr>
             <th>ID</th>
             <th>Nome</th>
