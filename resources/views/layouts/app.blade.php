@@ -67,13 +67,16 @@
     position: fixed;
     left: 0;
     bottom: 0;
+    height:70px;
     width: 100%;
-    background-color: #9C27B0;
+    background-color: #22b9b9;
     color: white;
-    text-align: center;
+    text-align: right;
+    padding-top: 27px;
+
     }
     body {
-        background-color:  #f0f0f0;
+        background-color:  #dddbdb;
         padding: 110px;
     }
     table{
@@ -83,6 +86,10 @@
         background-color: #2e2d2c;
         color:#fff;
     }
+    a{
+        color: #13073A;
+    }
+
     .dir{
         display: inline;
         float: right;
@@ -103,5 +110,22 @@
     .famarelo{
         background-color: #f2f545d3;
     }
+    .bloco{
+        height:450px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .conteudo{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+    .ct:hover{
+        background-color: red;
+    }
+    .ct:hover a{
+        color:white;
+    }
+
 </style>
 </html>
