@@ -20,7 +20,7 @@ class CreateProdutosTable extends Migration
             $table->integer('quantidade');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('id_atual');
-            $table->unsignedBigInteger('mod');
+            $table->unsignedBigInteger('modi');
             $table->foreign('user_id')->references('id')->on('users');  
             $table->timestamps();
         });

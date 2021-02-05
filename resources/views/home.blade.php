@@ -14,7 +14,7 @@
         </a>
     </div>
     <div class="col-md-4 bloco fverde ct">
-        <a href="/dd">
+        <a href="/distribuicao">
             <div class="conteudo">
                 <h4>Distribuição de produtos</h4>
                 <p>

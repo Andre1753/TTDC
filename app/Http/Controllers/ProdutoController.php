@@ -47,7 +47,7 @@ class ProdutoController extends Controller
         $prod->quantidade = $request->input('quantidade');
         $prod->user_id = auth()->id();
         $prod->id_atual = 0;
-        $prod->mod = 0;
+        $prod->modi = 0;
         $prod->save();
 
         return redirect('produtos');

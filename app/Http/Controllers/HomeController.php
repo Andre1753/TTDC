@@ -42,7 +42,7 @@ class HomeController extends Controller
         {
             foreach($produtos as $produtos)
             {  
-                if($produtos->mod == 0 || $produtos->mod != date('d'))
+                if($produtos->modi == 0 || $produtos->modi != date('d'))
                 {    
                     do
                     {
@@ -52,7 +52,7 @@ class HomeController extends Controller
                     while($us==null);
 
                     $produtos->id_atual= $selecionado;
-                    $produtos->mod= date('d');
+                    $produtos->modi= date('d');
                     $produtos->save();
                 }
             }
