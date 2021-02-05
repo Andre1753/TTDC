@@ -33,29 +33,34 @@ class HomeController extends Controller
         $produtos = Produto::all();
         $usuarios = Usuario::all();
 
+
+
         $contprod = Produto::count();
         $contusu = Usuario::count();
         
         if($contusu != 0 && $contprod != 0)
         {
-            $qtd = $contprod/$contusu;
-        }
+            foreach($produtos as $produtos)
+            {  
+                if($produtos->mod == 0 || $produtos->mod != date('d'))
+                {    
+                    do
+                    {
+                        $selecionado = rand(0,($contusu+1));
+                        $us = Usuario::Find($selecionado);
+                    }
+                    while($us==null);
 
-        foreach($produtos as $produtos)
-        {
-            do
-            {
-                $selecionado = rand(0,($contusu+1));
-                $us = Usuario::Find($selecionado);
+                    $produtos->id_atual= $selecionado;
+                    $produtos->mod= date('d');
+                    $produtos->save();
+                }
             }
-            while($us==null);
 
-            $produtos->id_atual= $selecionado;
-            $produtos->save();
+            $prod = Produto::all();
+
+             return view('produtosusuarios', compact('prod', 'usuarios'));
         }
-
-        $prod = Produto::all();
-
-        return view('produtosusuarios', compact('prod', 'usuarios'));
+        return view('home');
     }
 }
