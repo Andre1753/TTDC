@@ -23,7 +23,7 @@
      <strong>• "php artisan key:generate";</strong><br>
      <strong>• "php artisan migrate". </strong>
 
-6- No programa <strong>Xampp</strong>, abra o <strong>phpmyadmin</strong> clicando na ação admin do MYSQL. Na página WEB aberta, vá para a aba <strong>base de dados</strong> e selecione o banco de dados <strong>ttdc</strong>. Feito isso, vá para a aba <strong>SQL</strong>, copie e cole os códigos SQL dos blocos de nota <strong>"Dados BD Produtos.txt"</strong> e <strong>"Dados BD Usuarios.txt"strong> existente no diretório baixado e os execute. 
+6- No programa <strong>Xampp</strong>, abra o <strong>phpmyadmin</strong> clicando na ação admin do MYSQL. Na página WEB aberta, vá para a aba base de dados e selecione o banco de dados ttdc existente no diretório baixado e os execute. 
 
 7- No terminal, execute o comando <strong>"php artisan serve"</strong> e entre no link do server criado.
 
