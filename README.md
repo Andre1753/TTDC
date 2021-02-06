@@ -30,4 +30,4 @@
 
 8- <strong>Pronto! Agora é só criar sua conta e usar.</strong>
 
-PS: Para ver a funcionalidade Distribuição de produtos funcionando diariamente, mude a data do seu computador.
+PS: Para ver a funcionalidade "Distribuição de produtos" funcionando diariamente, mude a data do seu computador.
