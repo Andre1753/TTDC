@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-1- Para a execução do código, é necessário baixar e instalar os seguintes programas:
-     <strong>• Composer - https://getcomposer.org/download/;</strong>
-     <strong>• Node - https://nodejs.org/en/;</strong>
+1- Para a execução do código, é necessário baixar e instalar os seguintes programas:<br>
+     <strong>• Composer - https://getcomposer.org/download/;</strong><br>
+     <strong>• Node - https://nodejs.org/en/;</strong><br>
      <strong>• Xampp - https://www.apachefriends.org/pt_br/index.html/</strong> (inicie o Apache e o MYSQL após a instalação).
 
 2- Após a instalação dos programas, baixe e extraia o diretório do git;
@@ -18,9 +18,9 @@
 
 4- Abra o caminho do diretório extraído através do terminal de sua escolha (CMD, PowerShell, etc). 
 
-5- No terminal, execute as seguintes linhas de comando:
-     <strong>• "composer install";</strong>
-     <strong>• "php artisan key:generate";</strong>
+5- No terminal, execute as seguintes linhas de comando:<br>
+     <strong>• "composer install";</strong><br>
+     <strong>• "php artisan key:generate";</strong><br>
      <strong>• "php artisan migrate". </strong>
 
 6- No programa <strong>Xampp</strong>, abra o <strong>phpmyadmin</strong> clicando na ação admin do MYSQL. Na página WEB aberta, vá para a aba <strong>base de dados</strong> e selecione o banco de dados <strong>ttdc</strong>. Feito isso, vá para a aba <strong>SQL</strong>, copie e cole os códigos SQL dos blocos de nota <strong>"Dados BD Produtos.txt"</strong> e <strong>"Dados BD Usuarios.txt"strong> existente no diretório baixado e os execute. 
