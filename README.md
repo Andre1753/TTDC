@@ -17,15 +17,15 @@
 3-  Abra o caminho do diretorio extraido atraves do terminal de sua escolha(CMD, PowerShell, etc);
 
 4-  No terminal execute as seguintes linhas de comando:  <br>
-    "composer install";<br>
-    "php artisan key:generate";<br>
-    "php artisan migrate";<br>
+    <strong>"composer install";</strong><br>
+    <strong>"php artisan key:generate";</strong><br>
+    <strong>"php artisan migrate";</strong><br>
 
-5-  No xampp abra o phpmyadmin clicando na ação admin do MYSQL.<br>
+5-  No xampp abra o <strong>phpmyadmin</strong> clicando na ação admin do MYSQL.<br>
     Na página WEB aberta vá para a aba base de dados e selecione o banco de dados ttdc, depois vá para a aba SQL, copie e cole o conteudo dos blocos de nota <strong>"Dados BD      Produtos.txt"</strong> e <strong>"Dados BD Usuarios.txt"</strong> existente no diretorio baixado;
 
 6-  Execute no terminal o comando <strong>"php artisan serve"</strong> e entre no link do server criado.
 
-7- Pronto! Agora é só criar sua conta e usar.
+7- <strong>Pronto! Agora é só criar sua conta e usar.</strong>
 
-PS: Para ver a funcionalidade Distribuição funcionando diariamente, mude a data do seu computador.
+PS: Para ver a funcionalidade Distribuição de produtos funcionando diariamente, mude a data do seu computador.
