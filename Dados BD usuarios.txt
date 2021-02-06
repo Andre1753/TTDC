@@ -1,0 +1,9 @@
+INSERT into usuarios(nome,apelido,telefone,idade,cpf,created_at,updated_at) 
+values("André","Andre21",987654321,21,12345678910,now(),now()),
+("Pedro","Pedro20",987654321,20,12345678910,now(),now()),
+("Leandro","Leandro18",987654321,18,12345678910,now(),now()),
+("Maristela","Maristela19",987654321,19,12345678910,now(),now()),
+("Solange","Solange46",987654321,46,12345678910,now(),now()),
+("Juvenal","Juvenal63",987654321,63,12345678910,now(),now()),
+("Lucia","Lucia55",987654321,55,12345678910,now(),now()),
+("Denis","Denis27",987654321,27,12345678910,now(),now())
