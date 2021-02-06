@@ -12,8 +12,8 @@
             </div>
         </div>
     </div>
-    @foreach ($usuarios as $usuarios)
-            <h3>{{ $usuarios->apelido }}</h3>
+    @foreach ($usu as $usu)
+            <h3>{{ $usu->apelido }}</h3>
         <table class="table table-bordered table-striped table-responsive-lg fverde">
             <tr>
                 <th>ID</th>
@@ -24,7 +24,7 @@
                 <th width="280px">Ações</th>
             </tr>
             @foreach ($prod as $produtos)
-                @if($produtos->id_atual == $usuarios->id)
+                @if($produtos->id_atual == $usu->id)
                     <tr>
                         <td>{{ $produtos->id }}</td>
                         <td>{{ $produtos->nome }}</td>

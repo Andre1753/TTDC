@@ -33,10 +33,14 @@ class HomeController extends Controller
         $produtos = Produto::all();
         $usuarios = Usuario::all();
 
-
-
+        
         $contprod = Produto::count();
         $contusu = Usuario::count();
+
+        foreach($usuarios as $usuarios)
+        {  
+            $usid = $usuarios->id;
+        }
         
         if($contusu != 0 && $contprod != 0)
         {
@@ -46,7 +50,7 @@ class HomeController extends Controller
                 {    
                     do
                     {
-                        $selecionado = rand(0,($contusu+1));
+                        $selecionado = rand(0,($usid+1));
                         $us = Usuario::Find($selecionado);
                     }
                     while($us==null);
@@ -58,8 +62,8 @@ class HomeController extends Controller
             }
 
             $prod = Produto::all();
-
-             return view('produtosusuarios', compact('prod', 'usuarios'));
+            $usu = Usuario::all();
+             return view('produtosusuarios', compact('prod', 'usu'));
         }
         return view('home');
     }
