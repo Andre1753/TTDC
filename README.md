@@ -7,27 +7,26 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-1-  Para a execução do codigo é necessario baixar e instalar os seguintes programas:<br>
-    <strong>Composer</strong> - https://getcomposer.org/download/;<br>
-    <strong>Node</strong> - https://nodejs.org/en/;<br>
-    <strong>Xampp</strong> - https://www.apachefriends.org/pt_br/index.html/ (inicie o apache e o MYSQL após a instalação);<br>
+1- Para a execução do código, é necessário baixar e instalar os seguintes programas:
+     <strong>• Composer - https://getcomposer.org/download/;</strong>
+     <strong>• Node - https://nodejs.org/en/;</strong>
+     <strong>• Xampp - https://www.apachefriends.org/pt_br/index.html/</strong> (inicie o Apache e o MYSQL após a instalação).
 
-2-  Após a instalação dos programas, baixe e extraia o diretorio do git;
+2- Após a instalação dos programas, baixe e extraia o diretório do git;
 
-3-  No diretorio já extraido renomeie o arquivo <strong>".env.example"</strong> para <strong>.env</strong>
+3- No diretório já extraido, renomeie o arquivo <strong>".env.example"</strong> para <strong>.env</strong>
 
-4-  Abra o caminho do diretorio extraido atraves do terminal de sua escolha(CMD, PowerShell, etc);
+4- Abra o caminho do diretório extraído através do terminal de sua escolha (CMD, PowerShell, etc). 
 
-5-  No terminal execute as seguintes linhas de comando:  <br>
-    <strong>"composer install";</strong><br>
-    <strong>"php artisan key:generate";</strong><br>
-    <strong>"php artisan migrate";</strong><br>
+5- No terminal, execute as seguintes linhas de comando:
+     <strong>• "composer install";</strong>
+     <strong>• "php artisan key:generate";</strong>
+     <strong>• "php artisan migrate". </strong>
 
-6-  No xampp abra o <strong>phpmyadmin</strong> clicando na ação admin do MYSQL.<br>
-    Na página WEB aberta vá para a aba base de dados e selecione o banco de dados ttdc, depois vá para a aba SQL, copie e cole os codigos SQL dos blocos de nota <strong>"Dados BD Produtos.txt"</strong> e <strong>"Dados BD Usuarios.txt"</strong> existente no diretorio baixado e execute;
+6- No programa <strong>Xampp</strong>, abra o <strong>phpmyadmin</strong> clicando na ação admin do MYSQL. Na página WEB aberta, vá para a aba <strong>base de dados</strong> e selecione o banco de dados <strong>ttdc</strong>. Feito isso, vá para a aba <strong>SQL</strong>, copie e cole os códigos SQL dos blocos de nota <strong>"Dados BD Produtos.txt"</strong> e <strong>"Dados BD Usuarios.txt"strong> existente no diretório baixado e os execute. 
 
-7-  Execute no terminal o comando <strong>"php artisan serve"</strong> e entre no link do server criado.
+7- No terminal, execute o comando <strong>"php artisan serve"</strong> e entre no link do server criado.
 
-8- <strong>Pronto! Agora é só criar sua conta e usar.</strong>
+8-<strong> Pronto! Agora é só criar sua conta e usar!</strong>
 
-PS: Para ver a funcionalidade "Distribuição de produtos" funcionando diariamente, mude a data do seu computador.
+Obs: Para ver a funcionalidade "Distribuição de produtos" funcionando diariamente, mude a data do seu computador.
